@@ -13,12 +13,14 @@ body {
     background: url('assets/background.png') no-repeat center center fixed; 
     background-size: cover;
     font-family: 'Caviar Dreams', sans-serif;
+    color: #0b0b10
 }
 
 .profile-card {
     width: 1000px;
     max-width: calc(100vw - 20px);
     height: auto;
+    max-height: calc(100vw - 20px);
     background-color: rgba(211, 231, 249, 0.46);
     border-radius: 40px;
     box-shadow: rgba(0, 0, 0, 0.25) 10px 10px 25px 5px;
@@ -38,16 +40,12 @@ body {
 }
 
 img {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
     padding-left: 16px;
-    margin-left: -50px;
-    margin-right: 10px;
-    margin-bottom: 30px;
     float: left;
     position: sticky;
-    top: 50%;
-    transform: translate(0px, 40px);
 }
 
 ul {
@@ -58,28 +56,30 @@ li {
     display: inline;
 }
 
-h1{
+h1 {
     font-size: 48px;
     font-weight: bold;
     margin-right: 10px;
     margin-bottom: 10px;
 }
 
-h2{
+h2 {
     font-size: 40px;
     word-spacing: -5px;
-    margin-bottom: 10px;
+    margin: 10px auto 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 h3, p{
     font-size: 24px;
+    padding-right: 50px;
 }
 
 .about{
     font-size: 18px;
-    margin-top: 15px;
-    padding-left: 20px;
-    padding-right: 10px;
+    line-height: 25px;
+    margin: 15px auto;
     text-align: center;
 }
 
@@ -92,25 +92,29 @@ button{
     padding: 15px;
     border-color:  rgba(211, 231, 249, 0.46);
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 8px 8px;
-    margin-top: 15px;
+    box-shadow: rgba(33, 37, 84, 0.185) 2px 2px 8px 3px;
+    margin: 15px auto 15px;
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #B7B0EB;
+    color: #000;
+    transition: all 0.25s ease-in-out;
+  }
+
 .links{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 15px;
-    clear: left;
-    font-size: 12px;
+    line-height: 32px;
+    padding: 20px;
+    font-size: 16px;
 }
 
 .nav{
-    color: rgba(135, 152, 167, 0.46);
-    padding: 2%;
+    color: rgba(10, 11, 12, 0.46);
+    padding: 3%;
 }
   
 a.nav:hover {
-    color: #D3E7F9;
+    color: #847bba;
     transition: all 0.25s ease-in-out;
 }
